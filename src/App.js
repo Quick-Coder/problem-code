@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header/Header'
+import PostWrap from './components/PostWrap/PostWrap';
+import WrongPath from './components/WrongPath/WrongPath'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route  
+} from "react-router-dom";
+import PostDetails from './components/PostDetails/PostDetails';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Header></Header>
+     
+      <Router>
+        <Switch>
+          <Route path='/posts'>
+            <PostWrap></PostWrap>            
+          </Route>
+          <Route exact path='/'>
+            <PostWrap></PostWrap>
+          </Route>
+          <Route path='/post/:postid'>
+              <PostDetails></PostDetails>
+          </Route>
+          <Route path='*'>
+              <WrongPath></WrongPath>
+          </Route>
+        </Switch>
+      </Router>
+         
     </div>
-  );
+    
+  )
 }
 
 export default App;

@@ -1,0 +1,12 @@
+.post-container{
+    border: 1px solid lightgray;
+    padding: 10px;
+    background-color:#e9ecef;
+}
+.highlight{
+    color: blue;
+}
+.seeMoreBtn{
+    position: relative;
+    left: 700px;
+}
