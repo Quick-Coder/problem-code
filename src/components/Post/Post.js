@@ -14,13 +14,13 @@ const Post = (props) => {
             <p>{body}</p>
             
             <div className="main-btn ">             
-            <Button variant="outlined" color="primary" href="#outlined-buttons">
+            <Button variant="outlined" color="primary">
             Like
             </Button>           
                  
             <Link to={`/post/${id}`}>
             <Button className='seeMoreBtn' variant="contained" color="primary" href="#outlined-buttons">
-            See More
+            <b className='btn-text'>See More</b>
             </Button> 
             </Link> 
                              

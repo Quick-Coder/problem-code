@@ -2,11 +2,18 @@
     border: 1px solid lightgray;
     padding: 10px;
     background-color:#e9ecef;
+    margin-top:5px;
 }
 .highlight{
     color: blue;
 }
 .seeMoreBtn{
     position: relative;
-    left: 700px;
+    left: 650px;
+}
+p {
+    color: blue;
+}
+.btn-text{
+    text-decoration: none;
 }

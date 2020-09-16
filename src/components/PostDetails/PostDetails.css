@@ -1,0 +1,14 @@
+.post-details-wrap{
+    margin-top: 50px;
+    
+}
+.MuiPaper-root.MuiPaper-elevation1.MuiPaper-rounded {
+    padding: 18px;
+    border: 1px solid lightgray;
+    background-color: #b8bdc1;
+}
+.comment-wrap{
+    height: 880px;
+    overflow-y: hidden;
+    background-color: #b8bdc1;
+}
